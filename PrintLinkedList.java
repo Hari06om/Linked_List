@@ -18,7 +18,6 @@ public class PrintLinkedList {
             System.out.println("List is empty.");
             return;
         }
-
         while (temp != null) {
             System.out.print(temp.data + "->");
             temp = temp.next;
