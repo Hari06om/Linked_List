@@ -8,8 +8,8 @@ public class Head&Tail {
             this.next = null;
         }
     }
-    public Static Node head;
-    public Static Node tail;
+    public static Node head;
+    public static Node tail;
 
     public static void main(String args[]){
         Head&Tail list = new Head&Tail();
