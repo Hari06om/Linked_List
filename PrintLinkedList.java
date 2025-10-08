@@ -26,7 +26,6 @@ public class PrintLinkedList {
     }
     // Method to add elements to the end of linked list
     public static void addlast(int data){
-        
         //step1: create a new node
         Node newNode = new Node(data);
         if(head == null){
