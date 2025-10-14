@@ -1,43 +1,39 @@
-public class AddinfirstNode {
+public class AddinfirstNode{
     public static class Node{
-        int data;
+        int data; 
         Node next;
         public Node(int data){
             this.data = data;
             this.next = null;
         }
     }
-        public static Node head;
-        public static Node tail;
-    public static void addFirst(int data){
-        
-        //step1: create a new node
-        Node newNode = new Node(data);
+
+    public static Node head;
+    public static Node tail;
+
+    public static void addfirst(int data){
+        Node newNode =  new Node(data);
         if(head == null){
-            head =tail=newNode; //if list is empty, new node will be both head and tail
+            head = tail= newNode;
             return;
         }
-        
-        //step2: NewNode will be the new head
-        newNode.next = head; //link the new node to the current head
-        
-        //step3: update head to point to the new node
-        head = newNode;
+       newNode.next = head ;
+       head = newNode;
     }
-
-    
 
     public static void main(String args[]){
         AddinfirstNode ll = new AddinfirstNode();
-        ll.addFirst(85);
-        ll.addFirst(30);
-        ll.addFirst(50);
-        System.out.println("Linked List:");
+        ll.addfirst(2);
+        ll.addfirst(3);
+        ll.addfirst(4);
+
         Node temp = head;
-        while(temp!=null){
-            System.out.print(temp.data+" ");
+        while(temp != null){
+            System.out.print(temp.data + " -> ");
             temp = temp.next;
         }
-        System.out.println();
+        System.out.println("null");
+        
+
     }
 }
