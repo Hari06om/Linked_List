@@ -40,8 +40,8 @@ public class middile{
     public  void middle(int ind ,int data){
         Node newNode = new Node(data);
         Node temp = head;
-        int i=0;
-        while(i<ind){
+        int  i =0 ;
+        while(i<ind-1){
             temp = temp.next;
             i++;
             

@@ -26,13 +26,14 @@ public class AddinLast{
     public static void print(){
         Node temp = head;
         while(temp != null){
-            System.out.print(temp.data + " -> ");
+            System.out.print(temp.data + "->");
             temp = temp.next;
         }
         System.out.println("null");
     }
     public static void main(String args[]){
         AddinLast ll = new AddinLast();
+        ll.addlast(1);
         ll.addlast(2);
         ll.addlast(3);
         ll.addlast(4);
