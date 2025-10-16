@@ -36,7 +36,7 @@ public class middile{
         //step3: update head to point to the new node
         head = newNode;
     }
-
+    
     public  void middle(int ind ,int data){
         Node newNode = new Node(data);
         Node temp = head;
@@ -50,6 +50,7 @@ public class middile{
         temp.next = newNode;
         if(newNode.next == null){
             tail = newNode;
+            
         }
         System.out.println("Middle node added successfully");
         
