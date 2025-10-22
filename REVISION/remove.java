@@ -40,6 +40,7 @@ public class remove {
         if(head == tail){
             int val = head.data;
             head = tail = null;
+            size =0;
             return val;
         }
         if(size == 0){
@@ -48,6 +49,7 @@ public class remove {
         }
         int val = head.data;
         head = head.next;
+        size--;
         return val;
     }
 
@@ -59,8 +61,15 @@ public class remove {
         ll.add(4);
         ll.add(5);
         ll.add(6);
+        
+        //size
+        System.out.println("Size of linked list: " + ll.size);
+
+
         ll.print();
+        
         System.out.println("Removed value: " + ll.re());
+        System.out.println("Size of linked list after removal: " + ll.size);
         ll.print();
 
     }    
