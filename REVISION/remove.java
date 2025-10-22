@@ -9,9 +9,11 @@ public class remove {
     }
     public static Node head;
     public static Node tail;
+    public static int size;
 
     public void add(int data){
         Node newNode = new Node(data);
+        size++;
         if(head == null){
             head = tail  = newNode;
             return;
@@ -31,6 +33,19 @@ public class remove {
     }
 
     public int re(){
+        if(head == null){
+            System.out.println("Linked list is empty");
+            return -1;
+        }
+        if(head == tail){
+            int val = head.data;
+            head = tail = null;
+            return val;
+        }
+        if(size == 0){
+            System.out.println("Linked list is empty");
+            return -1;
+        }
         int val = head.data;
         head = head.next;
         return val;
