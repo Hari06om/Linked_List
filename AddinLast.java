@@ -21,7 +21,13 @@ public class AddinLast{
         tail.next = newNode;
         tail = newNode;
 
+    
     }
+
+
+    
+
+
 
     public static void print(){
         Node temp = head;
