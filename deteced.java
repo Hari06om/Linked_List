@@ -59,7 +59,6 @@ public class deteced {
         ll.add(1);
          print();
          System.out.println();
-         System.out.println(ll.iscycle());
-     
+         ll.iscycle();
     }
 }
