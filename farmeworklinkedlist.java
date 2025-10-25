@@ -11,5 +11,10 @@ public class farmeworklinkedlist {
     ll.addLast(5);
     ll.addFirst(1); 
     System.out.print(ll);
+
+    ll.removeLast();
+    ll.removeFirst();
+    System.out.println();
+    System.out.println(ll);
  }   
 }
