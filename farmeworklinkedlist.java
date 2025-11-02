@@ -16,5 +16,10 @@ public class farmeworklinkedlist {
     ll.removeFirst();
     System.out.println();
     System.out.println(ll);
+
+    ll.removeLast();
+    ll.removeFirst();
+    System.out.println();
+    System.out.println(ll);
  }   
 }
