@@ -13,8 +13,16 @@ public class Revision{
         ll.addLast(6);
         ll.addLast(null);
         ll.addFirst(0);
-        
-        System.out.print(ll);
 
+        System.out.print(ll);
+        
+        //remove 
+        ll.removeLast();
+        
+        ll.removeFirst();
+        
+        
+        System.out.println();
+        System.out.print(ll);
     }
 }
