@@ -1,5 +1,5 @@
 // Definition of a doubly linked list class
-public class Doublell{
+public class  Doublell{
     // Inner class representing a node in the doubly linked list
     public class Node{
         int data;    // Stores the actual data in the node
@@ -42,6 +42,27 @@ public class Doublell{
         System.out.println("null");      // Print null at the end
     }
 
+    public int removeFirst(){ // Removes and returns the first element of the list
+        if (head == null) { // If the list has no nodes
+            System.out.println("List is Empty"); // Inform caller the list is empty
+            return Integer.MIN_VALUE; // Return a sentinel value to indicate failure
+        } // end if head == null
+
+        if (size == 1) { // If the list contains exactly one node
+            int val = head.data; // Save the single node's data to return later
+            head = null; // Remove reference to the node from head
+            tail = null; // Remove reference to the node from tail
+            size--; // Decrement the size to reflect removal
+            return val; // Return the removed value
+        } // end if size == 1
+
+        int val = head.data; // Save the current head's data to return
+        head = head.next; // Advance head to the next node in the list
+        head.prev = null; // Clear the new head's prev reference
+        size--; // Decrement the size to reflect removal
+        return val; // Return the removed value
+    } // end removeFirst
+
     // Main method to test the doubly linked list implementation
     public static void main(String args[]){
         Doublell dll = new Doublell();   // Create new doubly linked list
@@ -52,5 +73,9 @@ public class Doublell{
         dll.addfirst(5);
         dll.print();                     // Print the list
         System.out.println(size);        // Print the size of list
+        dll.removeFirst();
+        dll.print();                     // Print the list
+        System.out.println(size);        // Print the size of list
+
     }
 }
