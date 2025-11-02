@@ -63,6 +63,12 @@ public class  Doublell{
         return val; // Return the removed value
     } // end removeFirst
 
+    public static  void remove(){
+        Doublell dll = new Doublell();  
+        dll.removeFirst();
+        dll.print();                     // Print the list
+        System.out.println(size); 
+    }
     // Main method to test the doubly linked list implementation
     public static void main(String args[]){
         Doublell dll = new Doublell();   // Create new doubly linked list
@@ -73,9 +79,13 @@ public class  Doublell{
         dll.addfirst(5);
         dll.print();                     // Print the list
         System.out.println(size);        // Print the size of list
-        dll.removeFirst();
-        dll.print();                     // Print the list
-        System.out.println(size);        // Print the size of list
-
+              // Print the size of list
+        remove();
+        remove();
+        remove();
+        remove();
+        remove();
+        remove();
+        
     }
 }
