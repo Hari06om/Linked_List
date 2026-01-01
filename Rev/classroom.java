@@ -15,8 +15,8 @@ public class classroom {
         for(int j = 3; j < 6; j++){
             ll.add(j, i);
             i += 2;
-            System.out.println(ll);
         }
+        System.out.println(ll);
 
         //remove
         ll.removeLast();
